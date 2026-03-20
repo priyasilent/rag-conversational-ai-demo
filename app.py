@@ -1,3 +1,5 @@
+
+# Simulated retrieval step (can be replaced with FAISS / vector DB)
 def simple_rag(query: str) -> str:
     knowledge_base = {
         "refund": "Refund requests are supported within 30 days of purchase.",
