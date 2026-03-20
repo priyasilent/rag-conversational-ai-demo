@@ -1,6 +1,6 @@
-# Conversational AI – RAG Demo
+# Conversational AI RAG Demo
 
-Lightweight Retrieval-Augmented Generation (RAG) system for conversational AI.
+Conversational AI demo using Retrieval-Augmented Generation (RAG) for knowledge-based question answering.
 
 ## Features
 - Query → retrieval → response pipeline  
@@ -12,7 +12,7 @@ Lightweight Retrieval-Augmented Generation (RAG) system for conversational AI.
 Python, LangChain, OpenAI  
 
 ## Use Case
-Enterprise chatbot for customer support automation.
+Enterprise customer support chatbot with retrieval-based response generation.
 
 ## Next Steps
 - Vector DB integration (FAISS)  
