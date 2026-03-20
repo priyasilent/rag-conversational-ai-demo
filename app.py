@@ -1,15 +1,19 @@
-def simple_rag(query):
-    knowledge = {
-        "refund": "Refund available within 30 days.",
-        "password": "Reset password via account settings."
+def simple_rag(query: str) -> str:
+    knowledge_base = {
+        "refund": "Refund requests are supported within 30 days of purchase.",
+        "password": "Users can reset passwords from the account settings page.",
+        "delivery": "Delivery status can be tracked from the orders section."
     }
 
-    for key in knowledge:
-        if key in query.lower():
-            return knowledge[key]
+    query_lower = query.lower()
+    for key, value in knowledge_base.items():
+        if key in query_lower:
+            return value
 
-    return "No information found."
+    return "No relevant information found in the knowledge base."
+
 
 if __name__ == "__main__":
-    query = input("Ask: ")
-    print(simple_rag(query))
+    user_query = input("Ask a question: ")
+    response = simple_rag(user_query)
+    print(response)
